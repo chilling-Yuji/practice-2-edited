@@ -1,0 +1,523 @@
+/* リセットcss */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* 共通のスタイル */
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.wrap {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+/* その他のスタイルは以下に記述していきます */
+
+header {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  top: 0;
+  z-index: 10;
+  height: 70px;
+  background: #000;
+  position: fixed;
+  width: 100%;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 35px;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  margin-top: 25px;
+  color: #f2f2f2;
+}
+
+/* ↑ヘッダー */
+/* ↓top-wrapper */
+
+.top-wrapper {
+  background-image: url(img/img/eyecatch.jpg);
+  background-size: cover;
+  position: relative;
+  height: 70vh;
+}
+
+.p {
+  font-weight: bold;
+  font-size: 36px;
+  padding-top: 35vh;
+  padding-left: 10%;
+  padding-bottom: 30vh;
+  color: #f2f2f2;
+  font-style: italic;
+}
+
+.info{
+  
+  padding-left: 40%;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+
+.newsleft{
+  background-color: white;
+  width: 45vw;
+}
+.date{
+  padding: 3px 0 5px 3px;
+
+}
+.arrival{
+  padding: 3px 0 15px 15px;
+  font-size: 0.8em;
+}
+
+.newsright{
+  color: white;
+  background-color: black;
+  text-align: center;
+  vertical-align: middle;
+  padding:10px 25px;
+}
+
+/* ↓top2 */
+.top2 {
+  background-color: black;
+  position: relative;
+  height: 400px;
+}
+
+.container {
+  margin-left: 20%;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-right: 25%;
+  position: absolute;
+  z-index: 5;
+}
+
+.container h2 {
+  font-size: 27px;
+  padding: 25px 0;
+}
+.container p {
+  font-size: 15px;
+}
+.container a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  background-color: white;
+  margin-top: 25px;
+  padding: 10px 24px;
+}
+
+.img-lemon {
+  position: absolute;
+  z-index: 3;
+  width: 37%;
+  height: 400px;
+  top: 170px;
+  right: 8%;
+}
+
+/* ↓middle */
+.middle {
+  height: 180px;
+  background-color: white;
+}
+
+.middle2 {
+  background-color: #cccccc;
+}
+.middle2 h2 {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 1.7em;
+  padding-bottom: 25px;
+}
+.services {
+  position: relative;
+}
+
+.text {
+  padding: 60px 60px 0 60px;
+}
+.text p {
+  padding-bottom: 30px;
+  font-family: sans-serif;
+}
+
+.a {
+  text-decoration: none;
+  color: black;
+  border: black solid 1px;
+  display: inline-block;
+  line-height: 30px;
+  margin-left: 65%;
+  padding: 4px 25px;
+}
+.web {
+  font-weight: bold;
+}
+
+/* ↓service1 */
+
+.service1 {
+  width: 40%;
+  height: 300px;
+  background-color: white;
+  position: absolute;
+  left: 18%;
+  top: 70px;
+}
+
+.img-camera {
+  padding-left: 50%;
+  padding-bottom: 50px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* ↓service2 */
+
+.service2 {
+  width: 40%;
+  height: 280px;
+  background-color: white;
+  position: absolute;
+  right: 18%;
+  top: 70px;
+}
+
+.img-fire {
+  padding-right: 50%;
+  padding-bottom: 100px;
+}
+
+.buffer {
+  width: 100%;
+  height: 50px;
+}
+
+/* ↓bottom */
+
+.img-matrix {
+  background-image: url(img/img/company.jpeg);
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 45%;
+  text-align: center;
+  height: 180px;
+  background-size: cover;
+}
+
+.img-screw {
+  background-image: url(img/img/recruit.jpg);
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 45%;
+  text-align: center;
+  height: 180px;
+  background-size: contain;
+}
+
+.img-matrix h2,
+.img-screw h2 {
+  margin-top: 60px;
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+.FAQ {
+  padding-left: 15px;
+}
+
+.FAQ　h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.faq {
+  margin: auto;
+  background-color: black;
+  color: white;
+  height: 100px;
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+/* ↓bottom2 */
+
+.bottom2 {
+  background-image: url(img/img/contact-bg.jpg);
+  background-size: contain;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.bottom2 h1 {
+  font-size: 38px;
+}
+
+.bottom2 h2 {
+  padding-bottom: 20px;
+  font-size: 41px;
+  font-weight: normal;
+}
+
+.bottom2 p {
+  padding-bottom: 35px;
+}
+
+.bottom2 h1 {
+  padding-bottom: 20px;
+}
+
+.bottom2 a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: white solid 1px;
+  padding: 8px 24px;
+  margin-bottom: 30px;
+}
+
+/* ↓footer */
+
+footer {
+  background-color: black;
+  color: white;
+  height: 80px;
+}
+
+footer li {
+  list-style: none;
+  float: left;
+  line-height: 80px;
+  margin-right: 25px;
+  font-size: 0.8em;
+}
+
+footer a {
+  text-decoration: none;
+  display: inline-block;
+  line-height: 80px;
+  color: white;
+}
+
+.copyright {
+  background-color: black;
+  color: white;
+  line-height: 15px;
+  text-align: center;
+}
